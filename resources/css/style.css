@@ -1,0 +1,232 @@
+/* Universal Styling */
+
+html {
+    font-size: 16px;
+    background: linear-gradient(270deg, #26212E 48.76%, #312B3B 91.52%);
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: "IM Fell English", sans-serif;
+    color: #EDEDED;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1.25rem;
+    margin: 0 auto;
+}
+
+a, p {
+    font-family: "Cardo", serif;
+    color: #F4EDE6;
+}
+
+button {
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 3px 0px 6px 2px #4A4059, 0px 3px 6px 2px #4A4059;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.add-to-cart {
+    background: linear-gradient(127deg, #FDF7B5 13.64%, #FBE097 59.74%);
+    margin-top: 1rem;
+}
+
+a, button {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+/* Header Styling */
+
+header .container{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    padding: 0 5%;
+    align-items: center;
+    height: 6rem;
+    background: none;
+    justify-content: center;
+}
+
+.logo img{
+    width: 6rem;
+    height: 6rem;
+}
+
+.main-nav-item-container{
+    padding: .75rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    flex-wrap: nowrap;
+}
+
+/* Hero Section */
+
+#hero-section {
+    position: relative;
+    height: 90vh;
+    margin: -6rem auto 2rem auto;
+    padding: 3rem 15%;
+    background: url("../images/maldoke_hero.png") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-section::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.75) 80%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.new-episode {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+}
+
+.button-container {
+    padding-left: 0 !important;
+    gap: 1rem;
+}
+
+
+.button-container .primary {
+    background-color: #26212E;
+    color: #F4EDE6;
+}
+
+.episode-snapshot {
+    display: block;
+    margin-left: 12.5% !important;
+    max-height: 20rem;
+    width: 37.5%;
+}
+
+.episode-snapshot img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 24px 24px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Featured Products Section */
+
+#featured {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem auto;
+    padding: 0 15%;
+    border-bottom: 2px solid #4A4059;
+}
+
+.merch-container {
+    display: flex;
+    padding-top: 2rem;
+    margin-bottom: 6rem;
+    gap: 5%;
+}
+
+.featured-item {
+    width: 30%;
+    height: auto;
+}
+
+.featured-item img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 3px 0px 6px 2px #4A4059, 0px 3px 6px 2px #4A4059;
+}
+
+/* Cast Section */
+
+#cast {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    padding: 0 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.dm-profile {
+    justify-content: center;
+    width: 30%;
+    height: auto;
+    margin: 2rem;
+}
+
+.dm-profile img {
+    width: 100%;
+    border-radius: 500px;
+    box-shadow: 3px 0px 6px 2px #4A4059, 0px 3px 6px 2px #4A4059;
+}
+
+.cast-container {
+    display: flex;
+    margin-bottom: 6rem;
+    gap: 5%;
+}
+
+.cast-profile {
+    width: 25%;
+    height: auto;
+}
+
+.cast-profile img {
+    width: 100%;
+    border-radius: 500px;
+    box-shadow: 3px 0px 6px 2px #4A4059, 0px 3px 6px 2px #4A4059;
+}
+
+/* Footer Section */
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    height: 6rem;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-links li{
+    padding: .75rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    flex-wrap: nowrap;
+}
